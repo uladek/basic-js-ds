@@ -18,7 +18,7 @@ class Queue {
     // this.list = new QueueList();
       this.head = null;
       this.tail = null;
-      this.lenght = 0;
+      this.length = 0;
   }
   //те пока очередь пуста
 
@@ -46,7 +46,7 @@ class Queue {
   //добовляем элемент в коненц очереди
 
   dequeue() {
-    // return this.list.removeFromFront();
+    
     const current = this.head;
     this.head = this.head.next;   
     this.length--;

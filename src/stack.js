@@ -17,10 +17,11 @@ class Stack {
   constructor() {
     this.elements = [];
   }
+
+
   push(element) {
     // throw new NotImplementedError('Not implemented');
   return this.elements.push(element);
-   
   }
 
   pop() {
@@ -29,10 +30,11 @@ class Stack {
   }
 
   peek() {
-    // throw new NotImplementedError('Not implemented');
-if (this.elements.length === 0){
-  return null;
-}
+    //вернуть верхушку посденйи элемент
+    if (this.elements.length === 0){
+      return  null;
+    }
+    
    return this.elements[this.elements.length - 1];
   }
 }
